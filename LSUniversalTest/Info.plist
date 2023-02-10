@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Privacy - Location When In Use Usage DescriptionPrivacy</key>
+	<string>location</string>
+	<key>Privacy - Microphone Usage DescriptionPrivacy</key>
+	<string>Call</string>
+	<key>Privacy - Photo Library Usage DescriptionPrivacy</key>
+	<string>Share</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

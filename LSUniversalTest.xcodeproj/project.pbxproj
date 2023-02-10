@@ -13,6 +13,9 @@
 		71DE1A31293E467500A25474 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71DE1A2F293E467500A25474 /* Main.storyboard */; };
 		71DE1A33293E467D00A25474 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71DE1A32293E467D00A25474 /* Assets.xcassets */; };
 		71DE1A36293E467D00A25474 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71DE1A34293E467D00A25474 /* LaunchScreen.storyboard */; };
+		71DE1A87293F5E4400A25474 /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DE1A86293F5E4400A25474 /* Logger.m */; };
+		71EB64DE2996819F00E9795C /* ViewController+LSUniversalSDKDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB64DD2996819F00E9795C /* ViewController+LSUniversalSDKDelegate.swift */; };
+		92C20846EADB4F9DD3449D05 /* Pods_LSUniversalTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E93C6DBAB7496C87F033C30 /* Pods_LSUniversalTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,22 @@
 		71DE1A32293E467D00A25474 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71DE1A35293E467D00A25474 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71DE1A37293E467E00A25474 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71DE1A5E293E4BBA00A25474 /* Permissions.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Permissions.xcframework; path = "../livesight/livesight-universalsdk/build/Permissions.xcframework"; sourceTree = "<group>"; };
+		71DE1A5F293E4BBA00A25474 /* SightCallCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SightCallCore.xcframework; path = "../livesight/livesight-universalsdk/build/SightCallCore.xcframework"; sourceTree = "<group>"; };
+		71DE1A60293E4BBA00A25474 /* AdvancedAnnotations.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AdvancedAnnotations.xcframework; path = "../livesight/livesight-universalsdk/build/AdvancedAnnotations.xcframework"; sourceTree = "<group>"; };
+		71DE1A61293E4BBA00A25474 /* MediaCapture.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MediaCapture.xcframework; path = "../livesight/livesight-universalsdk/build/MediaCapture.xcframework"; sourceTree = "<group>"; };
+		71DE1A62293E4BBA00A25474 /* Wormhole.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Wormhole.xcframework; path = "../livesight/livesight-universalsdk/build/Wormhole.xcframework"; sourceTree = "<group>"; };
+		71DE1A63293E4BBA00A25474 /* LiveTranslation.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LiveTranslation.xcframework; path = "../livesight/livesight-universalsdk/build/LiveTranslation.xcframework"; sourceTree = "<group>"; };
+		71DE1A64293E4BBA00A25474 /* LSUniversalSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LSUniversalSDK.xcframework; path = "../livesight/livesight-universalsdk/build/LSUniversalSDK.xcframework"; sourceTree = "<group>"; };
+		71DE1A65293E4BBA00A25474 /* Multiparty.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Multiparty.xcframework; path = "../livesight/livesight-universalsdk/build/Multiparty.xcframework"; sourceTree = "<group>"; };
+		71DE1A7E293E51EA00A25474 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		71DE1A84293F5E4400A25474 /* LSUniversalTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LSUniversalTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		71DE1A85293F5E4400A25474 /* Logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
+		71DE1A86293F5E4400A25474 /* Logger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
+		71EB64DD2996819F00E9795C /* ViewController+LSUniversalSDKDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+LSUniversalSDKDelegate.swift"; sourceTree = "<group>"; };
+		9E93C6DBAB7496C87F033C30 /* Pods_LSUniversalTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LSUniversalTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD92C6744A3D2DEABF94B358 /* Pods-LSUniversalTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSUniversalTest.release.xcconfig"; path = "Target Support Files/Pods-LSUniversalTest/Pods-LSUniversalTest.release.xcconfig"; sourceTree = "<group>"; };
+		EC628BF772C101A825129BB6 /* Pods-LSUniversalTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSUniversalTest.debug.xcconfig"; path = "Target Support Files/Pods-LSUniversalTest/Pods-LSUniversalTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +50,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92C20846EADB4F9DD3449D05 /* Pods_LSUniversalTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DF431C2759994E367DFC6E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC628BF772C101A825129BB6 /* Pods-LSUniversalTest.debug.xcconfig */,
+				CD92C6744A3D2DEABF94B358 /* Pods-LSUniversalTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		71DE1A1D293E467500A25474 = {
 			isa = PBXGroup;
 			children = (
+				71DE1A7E293E51EA00A25474 /* Podfile */,
 				71DE1A28293E467500A25474 /* LSUniversalTest */,
 				71DE1A27293E467500A25474 /* Products */,
+				71DE1A3D293E471800A25474 /* Frameworks */,
+				1DF431C2759994E367DFC6E1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +91,32 @@
 				71DE1A29293E467500A25474 /* AppDelegate.swift */,
 				71DE1A2B293E467500A25474 /* SceneDelegate.swift */,
 				71DE1A2D293E467500A25474 /* ViewController.swift */,
+				71EB64DD2996819F00E9795C /* ViewController+LSUniversalSDKDelegate.swift */,
+				71DE1A85293F5E4400A25474 /* Logger.h */,
+				71DE1A86293F5E4400A25474 /* Logger.m */,
 				71DE1A2F293E467500A25474 /* Main.storyboard */,
 				71DE1A32293E467D00A25474 /* Assets.xcassets */,
 				71DE1A34293E467D00A25474 /* LaunchScreen.storyboard */,
 				71DE1A37293E467E00A25474 /* Info.plist */,
+				71DE1A84293F5E4400A25474 /* LSUniversalTest-Bridging-Header.h */,
 			);
 			path = LSUniversalTest;
+			sourceTree = "<group>";
+		};
+		71DE1A3D293E471800A25474 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71DE1A60293E4BBA00A25474 /* AdvancedAnnotations.xcframework */,
+				71DE1A63293E4BBA00A25474 /* LiveTranslation.xcframework */,
+				71DE1A64293E4BBA00A25474 /* LSUniversalSDK.xcframework */,
+				71DE1A61293E4BBA00A25474 /* MediaCapture.xcframework */,
+				71DE1A65293E4BBA00A25474 /* Multiparty.xcframework */,
+				71DE1A5E293E4BBA00A25474 /* Permissions.xcframework */,
+				71DE1A5F293E4BBA00A25474 /* SightCallCore.xcframework */,
+				71DE1A62293E4BBA00A25474 /* Wormhole.xcframework */,
+				9E93C6DBAB7496C87F033C30 /* Pods_LSUniversalTest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +126,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 71DE1A3A293E467E00A25474 /* Build configuration list for PBXNativeTarget "LSUniversalTest" */;
 			buildPhases = (
+				826A21D1A86F9E42ADE2E114 /* [CP] Check Pods Manifest.lock */,
 				71DE1A22293E467500A25474 /* Sources */,
 				71DE1A23293E467500A25474 /* Frameworks */,
 				71DE1A24293E467500A25474 /* Resources */,
+				C73DB23D47FCABC3599B1727 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -99,6 +153,7 @@
 				TargetAttributes = {
 					71DE1A25293E467500A25474 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -133,12 +188,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		826A21D1A86F9E42ADE2E114 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LSUniversalTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C73DB23D47FCABC3599B1727 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LSUniversalTest/Pods-LSUniversalTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LSUniversalTest/Pods-LSUniversalTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LSUniversalTest/Pods-LSUniversalTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		71DE1A22293E467500A25474 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71EB64DE2996819F00E9795C /* ViewController+LSUniversalSDKDelegate.swift in Sources */,
 				71DE1A2E293E467500A25474 /* ViewController.swift in Sources */,
+				71DE1A87293F5E4400A25474 /* Logger.m in Sources */,
 				71DE1A2A293E467500A25474 /* AppDelegate.swift in Sources */,
 				71DE1A2C293E467500A25474 /* SceneDelegate.swift in Sources */,
 			);
@@ -282,19 +381,28 @@
 		};
 		71DE1A3B293E467E00A25474 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC628BF772C101A825129BB6 /* Pods-LSUniversalTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WDH9UWSA4G;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LSUniversalSDK_iOS.xcarchive/Products/Library/Frameworks",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LSUniversalTest/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = Call;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = micro;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +411,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sightcall.LSUniversalTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "LSUniversalTest/LSUniversalTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -310,19 +420,28 @@
 		};
 		71DE1A3C293E467E00A25474 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD92C6744A3D2DEABF94B358 /* Pods-LSUniversalTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WDH9UWSA4G;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LSUniversalSDK_iOS.xcarchive/Products/Library/Frameworks",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LSUniversalTest/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = Call;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = micro;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -331,6 +450,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sightcall.LSUniversalTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "LSUniversalTest/LSUniversalTest-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
