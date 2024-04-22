@@ -13,7 +13,6 @@
 		71DE1A31293E467500A25474 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71DE1A2F293E467500A25474 /* Main.storyboard */; };
 		71DE1A33293E467D00A25474 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71DE1A32293E467D00A25474 /* Assets.xcassets */; };
 		71DE1A36293E467D00A25474 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71DE1A34293E467D00A25474 /* LaunchScreen.storyboard */; };
-		71DE1A87293F5E4400A25474 /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DE1A86293F5E4400A25474 /* Logger.m */; };
 		71EB64DE2996819F00E9795C /* ViewController+LSUniversalSDKDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB64DD2996819F00E9795C /* ViewController+LSUniversalSDKDelegate.swift */; };
 		92C20846EADB4F9DD3449D05 /* Pods_LSUniversalTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E93C6DBAB7496C87F033C30 /* Pods_LSUniversalTest.framework */; };
 /* End PBXBuildFile section */
@@ -37,8 +36,6 @@
 		71DE1A65293E4BBA00A25474 /* Multiparty.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Multiparty.xcframework; path = "../livesight/livesight-universalsdk/build/Multiparty.xcframework"; sourceTree = "<group>"; };
 		71DE1A7E293E51EA00A25474 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		71DE1A84293F5E4400A25474 /* LSUniversalTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LSUniversalTest-Bridging-Header.h"; sourceTree = "<group>"; };
-		71DE1A85293F5E4400A25474 /* Logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
-		71DE1A86293F5E4400A25474 /* Logger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
 		71EB64DD2996819F00E9795C /* ViewController+LSUniversalSDKDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+LSUniversalSDKDelegate.swift"; sourceTree = "<group>"; };
 		9E93C6DBAB7496C87F033C30 /* Pods_LSUniversalTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LSUniversalTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD92C6744A3D2DEABF94B358 /* Pods-LSUniversalTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSUniversalTest.release.xcconfig"; path = "Target Support Files/Pods-LSUniversalTest/Pods-LSUniversalTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -92,8 +89,6 @@
 				71DE1A2B293E467500A25474 /* SceneDelegate.swift */,
 				71DE1A2D293E467500A25474 /* ViewController.swift */,
 				71EB64DD2996819F00E9795C /* ViewController+LSUniversalSDKDelegate.swift */,
-				71DE1A85293F5E4400A25474 /* Logger.h */,
-				71DE1A86293F5E4400A25474 /* Logger.m */,
 				71DE1A2F293E467500A25474 /* Main.storyboard */,
 				71DE1A32293E467D00A25474 /* Assets.xcassets */,
 				71DE1A34293E467D00A25474 /* LaunchScreen.storyboard */,
@@ -237,7 +232,6 @@
 			files = (
 				71EB64DE2996819F00E9795C /* ViewController+LSUniversalSDKDelegate.swift in Sources */,
 				71DE1A2E293E467500A25474 /* ViewController.swift in Sources */,
-				71DE1A87293F5E4400A25474 /* Logger.m in Sources */,
 				71DE1A2A293E467500A25474 /* AppDelegate.swift in Sources */,
 				71DE1A2C293E467500A25474 /* SceneDelegate.swift in Sources */,
 			);

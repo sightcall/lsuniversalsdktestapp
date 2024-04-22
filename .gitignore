@@ -1,0 +1,10 @@
+.DS_Store
+
+# Xcode
+*.xcworkspace
+*.xcuserstate
+**/xcuserdata
+
+# Cocoapods
+**/Pods
+
