@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import LSUniversalSDK
 
 // This enum is for test puropse
 private enum ConnectionStatus: Int {
@@ -33,13 +34,17 @@ private enum ConnectionStatus: Int {
     case dummy
 }
 
-// Here comes LSUniversal public callbacks
+// MARK: - LSUniversalDelegate
 extension ViewController: LSUniversalDelegate {
-// Mandatory callbacks
+
+    // MARK: Mandatory functions
+
     func connectionEvent(_ status: lsConnectionStatus_t) {
         // For user friendly print we are casting status to Swift ConnectionStatus enum
         print("LSUniversalTest status:", ConnectionStatus(rawValue: status.rawValue) ?? .dummy)
         switch status {
+
+            // Call status
         case .connecting:
             break
         case .active:
@@ -48,9 +53,9 @@ extension ViewController: LSUniversalDelegate {
             break
         case .callActive:
             Task { @MainActor in
-                guard let c = self.universal.callViewController else { return }
-                self.topVC = c
-                self.present(c, animated: true)
+                guard let callViewController = self.universal.callViewController else { return }
+                self.topViewController = callViewController
+                self.present(callViewController, animated: true)
             }
         case .disconnecting:
             break
@@ -58,15 +63,15 @@ extension ViewController: LSUniversalDelegate {
             break
         case .idle:
             break
-            
-        /** Agent status */
+
+            // Agent status
         case .agentConnected:
             break
         case .agentRegistering:
             break
         case .agentUnregistering:
             break
-            
+
         @unknown default:
             break
         }
@@ -87,7 +92,7 @@ extension ViewController: LSUniversalDelegate {
     
     func callReport(_ callEnd: LSCallReport) {
         // Call ended. We can dismiss our VC here
-        Task { @MainActor in self.topVC?.dismiss(animated: true) }
+        Task { @MainActor in self.topViewController?.dismiss(animated: true) }
         switch callEnd.callEnd {
         case .local:
             break
@@ -103,7 +108,10 @@ extension ViewController: LSUniversalDelegate {
         }
     }
     
-// Optional callbacks
+
+
+// MARK: Optional functions
+
     func acdStatusUpdate(_ update: LSACDQueue) {
 
     }
@@ -139,11 +147,48 @@ extension ViewController: LSUniversalDelegate {
     func agentIncomingCallDidTimeout() {
         
     }
-    
+
     func displayConsent(with description: LSConsentDescription) {
-        
+        // Avoid displaying multiple consent requests
+        termsOfConsentAlertController?.dismiss(animated: true)
+
+        termsOfConsentAlertController = UIAlertController(title: description.title,
+                                                          message: description.message,
+                                                          preferredStyle: .alert)
+
+        let cancelAction = UIAlertAction(title: description.cancelLabel,
+                                         style: .cancel) { _ in
+            description.consent?(false)
+        }
+
+        let agreeAction = UIAlertAction(title: description.agreeLabel,
+                                        style: .default) { _ in
+            description.consent?(true)
+        }
+
+        let eulaAction = UIAlertAction(title: description.eulaLabel,
+                                       style: .default) { _ in
+            guard let eulaURLString = description.eulaURL,
+                  let eulaURL = URL(string: eulaURLString) else {
+                return
+            }
+
+            if UIApplication.shared.canOpenURL(eulaURL) {
+                DispatchQueue.main.async {
+                    UIApplication.shared.open(eulaURL)
+                }
+            }
+        }
+
+        termsOfConsentAlertController?.addAction(cancelAction)
+        termsOfConsentAlertController?.addAction(agreeAction)
+        termsOfConsentAlertController?.addAction(eulaAction)
+
+        DispatchQueue.main.async {
+            self.show(self.termsOfConsentAlertController!, sender: self)
+        }
     }
-    
+
     func featureCommand(_ feature: LSDeeplinkCommand) {
         
     }
